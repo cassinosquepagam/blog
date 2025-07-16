@@ -1,1 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="O melhor blog sobre cassinos online - Dicas, estratégias e análises dos melhores jogos de azar">
+    <meta name="keywords" content="cassino online, jogos de azar, roleta, blackjack, slots, apostas, poker">
+    <title>CassinoMaster - Seu Guia para Cassinos Online</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%);
+        }
+        .read-more-btn {
+            transition: all 0.3s ease;
+        }
+        .read-more-btn:hover {
+            background-color: #1e40af;
+        }
+        .navbar {
+            backdrop-filter: blur(10px);
+            background-color: rgba(30, 58, 138, 0.9);
+        }
+        #search-results {
+            display: none;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header with Navigation -->
+    <header class="sticky top-0 z-50 navbar shadow-md">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-dice text-white text-2xl"></i>
+                <a href="index.html" class="text-white font-bold text-xl md:text-2xl">CassinoMaster</a>
+            </div>
+            
+            <div class="hidden md:flex space-x-6">
+                <a href="#" class="text-white hover:text-yellow-300 transition">Início</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition">Artigos</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition">Análises</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition">Estratégias</a>
+                <a href="#" class="text-white hover:text-yellow-300 transition">Bônus</a>
+            </div>
+            
+            <div class="relative">
+                <input type="text" id="search-input" placeholder="Buscar artigos..." class="px-4 py-2 rounded-full text-sm focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                <button id="search-btn" class="absolute right-3 top-2 text-gray-500 hover:text-blue-600">
+                    <i class="fas fa-search"></i>
+                </button>
+                <div id="search-results" class="absolute top-12 left-0 w-64 bg-white rounded-md shadow-lg p-4 hidden">
+                    <p class="text-sm text-gray-600">Resultados aparecerão aqui</p>
+                </div>
+            </div>
+            
+            <button id="mobile-menu-btn" class="md:hidden text-white text-2xl">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900 px-4 py-3">
+            <a href="#" class="block text-white py-2 hover:text-yellow-300">Início</a>
+            <a href="#" class="block text-white py-2 hover:text-yellow-300">Artigos</a>
+            <a href="#" class="block text-white py-2 hover:text-yellow-300">Análises</a>
+            <a href="#" class="block text-white py-2 hover:text-yellow-300">Estratégias</a>
+            <a href="#" class="block text-white py-2 hover:text-yellow-300">Bônus</a>
+        </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4">Domine os Cassinos Online</h1>
+                <p class="text-xl mb-6">Aprenda estratégias, descubra os melhores bônus e aumente suas chances de ganhar com nossos artigos especializados.</p>
+                <div class="flex space-x-4">
+                    <a href="#" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold py-3 px-6 rounded-full transition">Comece a Ler</a>
+                    <a href="#" class="border-2 border-white hover:bg-white hover:text-blue-900 font-bold py-3 px-6 rounded-full transition">Bônus Exclusivos</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://via.placeholder.com/500x300" alt="Jogos de cassino" class="rounded-lg shadow-2xl w-full max-w-md">
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Categories -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Explore Nossas Categorias</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <a href="#" class="category-card bg-blue-50 rounded-lg p-6 text-center hover:shadow-md transition">
+                    <div class="bg-blue-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-coins text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Bônus</h3>
+                    <p class="text-sm text-gray-600">Melhores ofertas</p>
+                </a>
+                <a href="#" class="category-card bg-red-50 rounded-lg p-6 text-center hover:shadow-md transition">
+                    <div class="bg-red-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-dice text-red-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Slots</h3>
+                    <p class="text-sm text-gray-600">Máquinas caça-níqueis</p>
+                </a>
+                <a href="#" class="category-card bg-green-50 rounded-lg p-6 text-center hover:shadow-md transition">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-chess text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Estratégias</h3>
+                    <p class="text-sm text-gray-600">Dicas para ganhar</p>
+                </a>
+                <a href="#" class="category-card bg-purple-50 rounded-lg p-6 text-center hover:shadow-md transition">
+                    <div class="bg-purple-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-star text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="font-bold text-lg mb-2">Destaques</h3>
+                    <p class="text-sm text-gray-600">Artigos populares</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Articles -->
+    <section class="py-12 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center mb-8">
+                <h2 class="text-3xl font-bold">Artigos Recentes</h2>
+                <a href="#" class="text-blue-600 hover:text-blue-800 font-medium">Ver todos →</a>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Article 1 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md article-card transition duration-300">
+                    <img src="https://via.placeholder.com/600x400" alt="Estratégias de Blackjack" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">Estratégias</span>
+                            <span class="text-gray-500 text-sm ml-4"><i class="far fa-clock mr-1"></i> 10 min de leitura</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">10 Estratégias de Blackjack para Aumentar Seus Ganhos</h3>
+                        <p class="text-gray-600 mb-4">Descubra como dominar o blackjack online com essas estratégias comprovadas que podem aumentar significativamente suas chances de vitória.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="read-more-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium">Ler artigo</a>
+                            <span class="text-gray-500 text-sm"><i class="far fa-eye mr-1"></i> 2.4K</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 2 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md article-card transition duration-300">
+                    <img src="https://via.placeholder.com/600x400" alt="Melhores slots 2023" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-red-100 text-red-800 text-xs font-medium px-2.5 py-0.5 rounded">Slots</span>
+                            <span class="text-gray-500 text-sm ml-4"><i class="far fa-clock mr-1"></i> 8 min de leitura</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Os 5 Melhores Slots para Jogar em 2023</h3>
+                        <p class="text-gray-600 mb-4">Confira nossa seleção dos slots online mais lucrativos e divertidos deste ano, com análises detalhadas de RTP e recursos especiais.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="read-more-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium">Ler artigo</a>
+                            <span class="text-gray-500 text-sm"><i class="far fa-eye mr-1"></i> 3.1K</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <!-- Article 3 -->
+                <article class="bg-white rounded-lg overflow-hidden shadow-md article-card transition duration-300">
+                    <img src="https://via.placeholder.com/600x400" alt="Bônus de cassino" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-yellow-100 text-yellow-800 text-xs font-medium px-2.5 py-0.5 rounded">Bônus</span>
+                            <span class="text-gray-500 text-sm ml-4"><i class="far fa-clock mr-1"></i> 6 min de leitura</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3">Como Maximizar Bônus de Cassino sem Depósito</h3>
+                        <p class="text-gray-600 mb-4">Guia completo para aproveitar ao máximo os bônus grátis oferecidos pelos cassinos online e converter em ganhos reais.</p>
+                        <div class="flex justify-between items-center">
+                            <a href="#" class="read-more-btn bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-medium">Ler artigo</a>
+                            <span class="text-gray-500 text-sm"><i class="far fa-eye mr-1"></i> 4.7K</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Tags -->
+    <section class="py-12 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-8">Tags Populares</h2>
+            <div class="flex flex-wrap justify-center gap-3">
+                <a href="#" class="tag bg-blue-100 hover:bg-blue-200 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">blackjack</a>
+                <a href="#" class="tag bg-red-100 hover:bg-red-200 text-red-800 px-4 py-2 rounded-full text-sm font-medium">roleta</a>
+                <a href="#" class="tag bg-green-100 hover:bg-green-200 text-green-800 px-4 py-2 rounded-full text-sm font-medium">poker</a>
+                <a href="#" class="tag bg-yellow-100 hover:bg-yellow-200 text-yellow-800 px-4 py-2 rounded-full text-sm font-medium">bônus</a>
+                <a href="#" class="tag bg-purple-100 hover:bg-purple-200 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">slots</a>
+                <a href="#" class="tag bg-pink-100 hover:bg-pink-200 text-pink-800 px-4 py-2 rounded-full text-sm font-medium">estratégias</a>
+                <a href="#" class="tag bg-indigo-100 hover:bg-indigo-200 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium">dicas</a>
+                <a href="#" class="tag bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-full text-sm font-medium">pagamentos</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="py-12 gradient-bg text-white">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <h2 class="text-3xl font-bold mb-4">Receba Dicas Exclusivas</h2>
+            <p class="text-xl mb-8">Inscreva-se em nossa newsletter e receba semanalmente estratégias, análises de jogos e ofertas exclusivas diretamente no seu e-mail.</p>
+            <form class="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
+                <input type="email" placeholder="Seu melhor e-mail" class="flex-grow px-4 py-3 rounded-full text-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-300">
+                <button type="submit" class="bg-yellow-400 hover:bg-yellow-500 text-blue-900 font-bold px-6 py-3 rounded-full transition">Assinar</button>
+            </form>
+            <p class="text-sm mt-4 text-blue-100">Nós respeitamos sua privacidade. Você pode cancelar a qualquer momento.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-dice mr-2"></i> CassinoMaster
+                    </h3>
+                    <p class="text-gray-400">O blog definitivo para entusiastas de cassinos online. Oferecemos conteúdo de qualidade desde 2018.</p>
+                    <div class="flex space-x-4 mt-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Links Úteis</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Política de Privacidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Termos de Uso</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Isenção de Responsabilidade</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Mapa do Site</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Categorias</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Bônus</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Slots</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Estratégias</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Análises</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Contato</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400"><i class="fas fa-envelope mr-2"></i> contato@cassinomaster.com</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-phone mr-2"></i> +55 11 98765-4321</li>
+                        <li class="flex items-center text-gray-400"><i class="fas fa-map-marker-alt mr-2"></i> São Paulo, Brasil</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
+                <p>© 2023 CassinoMaster. Todos os direitos reservados. Jogue com responsabilidade.</p>
+                <p class="mt-2 text-sm">Este site não oferece jogos de azar reais ou a oportunidade de ganhar dinheiro real. O conteúdo é apenas para fins informativos.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Search functionality
+        const searchInput = document.getElementById('search-input');
+        const searchBtn = document.getElementById('search-btn');
+        const searchResults = document.getElementById('search-results');
+        
+        searchInput.addEventListener('focus', () => {
+            searchResults.style.display = 'block';
+        });
+        
+        searchInput.addEventListener('blur', () => {
+            setTimeout(() => {
+                searchResults.style.display = 'none';
+            }, 200);
+        });
+        
+        searchBtn.addEventListener('click', () => {
+            // In a real implementation, this would search your articles
+            alert('Funcionalidade de busca seria implementada aqui');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
